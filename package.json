@@ -1,9 +1,10 @@
 {
-  "name": "hsl-to-hex",
+  "name": "@c350156378/hsl-to-hex",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint && tap --cov test",
+    "lint": "standard"
   },
   "author": "Jason Chen",
   "license": "ISC",
@@ -15,5 +16,15 @@
     "url": "https://github.com/c350156378/hsl-to-hex/issues"
   },
   "homepage": "https://github.com/c350156378/hsl-to-hex#readme",
-  "description": ""
+  "description": "Convert HSL colors to RGB colors in hex format.\r ## Install\r ```sh\r npm install --save @c350156378/hsl-to-hex\r ```\r ## API\r ```\r require('hsl-to-hex') => Function\r hsl(hue, saturation, luminosity)` => String\r ```\r ## Example\r ```js\r var hsl = require('hsl-to-hex')\r var hue = 133\r var saturation = 40\r var luminosity = 60\r var hex = hsl(hue, saturation, luminosity)\r console.log(hex) // #70c282\r ```\r ## License\r ISC",
+  "dependencies": {
+    "hsl-to-rgb-for-reals": "^1.1.0"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3",
+    "tap": "^11.0.1"
+  },
+  "directories": {
+    "test": "test"
+  }
 }

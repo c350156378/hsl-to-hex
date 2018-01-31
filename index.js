@@ -1,6 +1,8 @@
 const toRgb = require('hsl-to-rgb-for-reals')
+const debug = require('debug')('hsl-to-hex')
 
 function max (val, n) {
+  debug('ensuring ' + val + ' is no more than ' + n)
   return (val > n) ? n : val
 }
 

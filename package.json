@@ -3,9 +3,10 @@
   "version": "1.0.3",
   "main": "index.js",
   "scripts": {
-    "prepublishOnly": "npm ls && npm test",
+    "check": "npm ls && npm test",
     "test": "npm run lint && tap --cov test",
-    "lint": "standard"
+    "lint": "standard",
+    "prepublish": "npm run check && ./publish-dep.sh"
   },
   "author": "Jason Chen",
   "license": "ISC",

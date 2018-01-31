@@ -1,5 +1,6 @@
 const toRgb = require('hsl-to-rgb-for-reals')
 const debug = require('debug')('hsl-to-hex')
+const clockface = require('clockface')
 
 function max (val, n) {
   debug('ensuring ' + val + ' is no more than ' + n)
@@ -19,6 +20,7 @@ function cycle (val) {
 }
 
 function hsl (hue, saturation, luminosity) {
+  console.log(clockface)
   hue = cycle(hue)
   saturation = min(max(saturation, 100), 0)
   luminosity = min(max(luminosity, 100), 0)

@@ -1,6 +1,6 @@
 {
   "name": "@c350156378/hsl-to-hex",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "scripts": {
     "check": "npm ls && npm test",

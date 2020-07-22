@@ -20,13 +20,12 @@
   "homepage": "https://github.com/c350156378/hsl-to-hex#readme",
   "description": "Convert HSL colors to RGB colors in hex format.\r ## Install\r ```sh\r npm install --save @c350156378/hsl-to-hex\r ```\r ## API\r ```\r require('hsl-to-hex') => Function\r hsl(hue, saturation, luminosity)` => String\r ```\r ## Example\r ```js\r var hsl = require('hsl-to-hex')\r var hue = 133\r var saturation = 40\r var luminosity = 60\r var hex = hsl(hue, saturation, luminosity)\r console.log(hex) // #70c282\r ```\r ## License\r ISC",
   "dependencies": {
-
-    "debug": "^3.1.0",
-    "hsl-to-rgb-for-reals": "^1.1.0"
+    "debug": "^3.2.6",
+    "hsl-to-rgb-for-reals": "^1.1.1"
   },
   "devDependencies": {
     "standard": "^10.0.3",
-    "tap": "^11.0.1"
+    "tap": "^11.1.5"
   },
   "directories": {
     "test": "test"
